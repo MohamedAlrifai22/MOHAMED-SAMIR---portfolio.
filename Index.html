@@ -11,66 +11,120 @@
     />
 
     <style>
-
-      
-      body {
-        font-family: Arial, sans-serif;
+      * {
         margin: 0;
         padding: 0;
         box-sizing: border-box;
-        line-height: 1.8; /* المسافة بين الأسطر */
       }
+
+      body {
+        font-family: Arial, sans-serif;
+        line-height: 1.8;
+      }
+
       header {
         background-color: #004080;
         color: white;
         padding: 20px;
         text-align: center;
       }
+
       nav {
         background-color: #f4f4f4;
         padding: 10px;
-        text-align: center;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
       }
+
       nav a {
-        margin: 0 15px;
+        margin: 10px;
         text-decoration: none;
         color: #004080;
         font-weight: bold;
       }
+
       section {
         padding: 20px;
-        margin: 20px auto;
-        max-width: 800px;
+        margin: 0 auto;
+        max-width: 1200px;
       }
+
       h2 {
         color: #004080;
       }
+
       .contact {
         background-color: #f4f4f4;
         padding: 20px;
         text-align: center;
       }
+
       .contact p {
         margin: 5px 0;
       }
+
       table {
         width: 100%;
         border-collapse: collapse;
         margin: 20px 0;
+        overflow-x: auto;
+        display: block;
       }
+
       table,
       th,
       td {
         border: 1px solid #ddd;
       }
+
       th,
       td {
         padding: 10px;
         text-align: center;
       }
+
       th {
         background-color: #004080;
         color: white;
+      }
+
+      ul {
+        list-style-type: disc;
+        padding-left: 20px;
+      }
+
+      video {
+        width: 100%;
+        height: auto;
+      }
+
+      @media (max-width: 768px) {
+        nav {
+          flex-direction: column;
+        }
+
+        table {
+          font-size: 14px;
+        }
+      }
+
+      @media (max-width: 480px) {
+        header h1 {
+          font-size: 1.5rem;
+        }
+
+        header p {
+          font-size: 1rem;
+        }
+
+        nav a {
+          font-size: 0.9rem;
+        }
+
+        table {
+          font-size: 12px;
+        }
       }
     </style>
   </head>
@@ -235,22 +289,20 @@
       </table>
     </section>
 
-    <section>
-      <section id="project-video">
-        <h2>Project Video</h2>
-        <video controls width="100%">
-          <source
-            src="./whatsapp-video-2025-02-23-at-121625-pm_xPlQrUrj.mp4"
-            type="video/mp4"
-          />
-          Your browser does not support the video tag.
-        </video>
-        <p>Watch the execution of one of my projects.</p>
-        <p>
-          A project was implemented with a length of 1100 meters under the Nile
-          River, including bundle 10 pipeline railway signal cables, one set.
-        </p>
-      </section>
+    <section id="project-video">
+      <h2>Project Video</h2>
+      <video controls>
+        <source
+          src="./whatsapp-video-2025-02-23-at-121625-pm_xPlQrUrj.mp4"
+          type="video/mp4"
+        />
+        Your browser does not support the video tag.
+      </video>
+      <p>Watch the execution of one of my projects.</p>
+      <p>
+        A project was implemented with a length of 1100 meters under the Nile
+        River, including bundle 10 pipeline railway signal cables, one set.
+      </p>
     </section>
 
     <section id="skills">
@@ -263,10 +315,10 @@
         <li>Electronic Distance Measurements</li>
         <li>DigiTrack Falcon F5+</li>
         <li>ParaTrack 2 (RivCross Software)</li>
-        <li>primavera</li>
+        <li>Primavera</li>
         <li>Photoshop</li>
-        <li>Vedio Editing</li>
-        <li>programming languages (HTML-CSS-JAVASCRIPT)</li>
+        <li>Video Editing</li>
+        <li>Programming languages (HTML, CSS, JavaScript)</li>
       </ul>
     </section>
 
@@ -298,7 +350,6 @@
           Site management and dealing with the Client, completing papers and
           permits for site work.
         </li>
-        <!-- Additional projects can be added here -->
       </ul>
     </section>
 
